@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>WSN Routing Viewer</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="control-panel">
+    <h2>ワイヤレスセンサーネットワーク ルーティング可視化</h2>
+    <p>アルゴリズム: <span id="algorithm-name">default</span></p>
+    <div>
+      <button id="play">▶️ 再生</button>
+      <input type="range" id="round-slider" min="1" max="0" value="1" style="width: 200px;">
+      <span id="round-info">Round: 1</span>
+    </div>
+  </div>
+  <svg></svg>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
