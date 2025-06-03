@@ -11,16 +11,29 @@
 <body>
   <div class="control-panel">
     <h2>ワイヤレスセンサーネットワーク ルーティング可視化</h2>
-    <p>アルゴリズム: <span id="algorithm-name">default</span></p>
+    <div>
+      <label for="algorithm-select">Algorithm:</label>
+      <select id="algorithm-select"></select>
+      <span id="current-algo-status" style="margin-left:10px;">Loaded: <span id="algorithm-name">None</span></span>
+    </div>
     <div>
       <button id="play">▶️ 再生</button>
       <input type="range" id="round-slider" min="1" max="0" value="1" style="width: 200px;">
       <span id="round-info">Round: 1</span>
     </div>
+    <div id="node-info-panel">
+      <h3>Selected Node Information:</h3>
+      <div id="node-info-content">Click a node to see details.</div>
+    </div>
   </div>
+  <div id="error-message" style="color: red; text-align: center;"></div>
   <svg></svg>
 
-  <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/visualization.js"></script>
+    <script src="js/data_loader.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
