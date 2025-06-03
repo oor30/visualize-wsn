@@ -2,7 +2,7 @@
 const SVG_WIDTH = 1200;
 const SVG_HEIGHT = 1200;
 
-const availableAlgorithms = ['_default', 'algo_2']; // MODIFIED LINE
+const availableAlgorithms = ['_default', 'leach', 'chen254']; // MODIFIED LINE
 
 // D3 UI Selectors
 const algorithmSelect = d3.select("#algorithm-select");
